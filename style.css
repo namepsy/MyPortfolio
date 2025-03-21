@@ -232,7 +232,7 @@ header img{
 }
 
 /*------FOOTER-------*/
-/* #footer-container{
+#footer-container{
   background-color: var(--black);
   display: flex;
   justify-content: center;
@@ -245,7 +245,7 @@ header img{
 }
 #footer-container p{
   padding: .5rem;
-} */
+}
 
 
 /*-----MEDIA QUERIES-----*/
