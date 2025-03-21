@@ -1,0 +1,318 @@
+/* 전체 웹사이트에서 쓸수있는 값을 저장하는 곳 / 나중에 color: var(--yellow) 이런식으로 불러오기 가능 */
+:root {
+  --yellow: #fec008;
+  --blue: #0000FF;
+  --black: #212429;
+  --green: #18a2b7;
+  --title: #6c747d;
+  --main: #353941;
+  --nav-color: #f7f9fb;
+
+  --body-fonts: 'Roboto', sans-serif;
+  --skills: #017afd;
+}
+
+/* * -> 모든 요소를 뜻하는 것 
+    기본 margin, padding을 0으로 초기화해서 디자인이 깔끔해짐 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 전체 웹페이지의 본문 */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 350;
+
+}
+
+/* h1 제목 크기, 굵기, 색 설정 */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* <p> 문단 글자 크기, 색상 */
+p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--title)
+}
+
+header{
+  display: flex; /* 가로 정렬 */
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center; /* 위아래 가운데 정렬 */
+  background-color: var(--nav-color);
+  flex-wrap: wrap; /* 화면이 작을때 줄바꿈 허용 */
+  width: 100%;
+  height: 4.5rem;
+}
+
+header h1{
+  margin-right: auto; /* 제목을 왼쪽으로 밀어주는 역할 */
+  margin-left: 0.2rem;
+
+}
+
+/* 로고 이미지 설정 */
+header img{
+  width: 5rem;
+  margin-left: 0.5rem;
+  margin-right: 0;
+
+}
+
+/* 메뉴를 가로로 정렬하고, 각 항목 사이 여백 추가 */
+/* 링크에 밑줄 제거, 글자 크기와 색상 지정 */
+.nav-links{
+  display: flex;
+  margin-right: 2rem;
+  padding: .6rem;
+}
+.nav-links li {
+  list-style: none;
+  padding: 0 1rem;
+}
+.nav-links li a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--main);
+}
+
+/* 햄버거 메뉴(모바일용) */
+/* 기본 버튼 스타일 제거, 클릭 시 테두리 안보이게 제거 */
+/* 기본 상태에서는 display: none; */
+.hamburger{
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.hamburger:focus{
+  outline: none;
+}
+
+/* -----main section----- */
+/* 메인 콘텐츠 가로로 나란히 배치, 양쪽 여백 자동으로 맞춰 가운데 정렬 */
+#main-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  width: 70%;
+}
+
+/* 프로필 사진 크기와 이름 스타일 지정 */
+.myphoto img {
+  width: 200px;
+}
+
+.myphoto h2 {
+  text-align: center;
+  color: var(--title);
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+/* Animation Effect */
+.About {
+  width: 65%;
+  padding: 0 .8rem;
+}
+#about{
+  transition: all 0.99s;
+}
+.para {
+  padding-bottom: 1rem;
+}
+
+/* SOCIAL ICONS */
+.social .btn {
+  text-decoration: none;
+  color: var(--nav-color);
+  background-color: var(--blue);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.fab {
+  padding: .5rem .3rem;
+  font-size: 1.5rem;
+  /* color: var(--yellow); */
+  /* border: 1px solid red; */
+}
+
+/* .fa-facebook{ */
+/*  background-color: var(--facebook);
+ }
+ .fa-instagram{
+ background-color: red;
+ } */
+
+
+/* ------SKILLS SECTION----- */
+
+#skills h1 {
+  text-align: center;
+  color: var(--yellow);
+  margin: 1rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 1rem auto;
+  height: 23rem;
+
+}
+.skills-container h2{
+   padding-bottom: 1rem;
+}
+
+/* 개별 스킬 박스 */
+.MaxMSP {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--yellow);
+  height: 17rem;
+  width: 33.3%;
+  margin: 15px;
+  border-radius: .8rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.music {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--yellow);
+  height: 17rem;
+  width: 33.3%;
+  margin: 15px;
+  border-radius: .8rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--yellow);
+  height: 17rem;
+  width: 33.3%;
+  margin: 15px;
+  border-radius: .8rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.icon {
+  font-size: 3rem;
+  margin-top: -50px;
+  padding-bottom: 20px;
+}
+
+/*------FOOTER-------*/
+/* #footer-container{
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 6rem;
+}
+#footer-container img{
+  width: 2rem;
+}
+#footer-container p{
+  padding: .5rem;
+} */
+
+
+/*-----MEDIA QUERIES-----*/
+
+/* @media screen and (max-width: 575px) {
+  .hamburger{
+    display: block;
+    margin-right: 1rem;
+  }
+  header h1{
+    font-size: 1rem;
+    
+  }
+  header img{
+    width: 2rem;
+  }
+  #nav-Ul{
+    display: none;
+  }
+  #nav-Ul.show{
+   display: flex;
+   width: 100%;
+  }
+  .nav-links li a{
+    font-size: 1rem;
+  }
+#about {
+  transition: all 0.9s;
+}
+#main-section{
+  flex-direction: column;
+  margin: 2rem auto 2rem auto;
+}
+.myphoto img{
+  width: 230px;
+  padding-left: 3rem;
+}
+.About{
+  width: 100%;
+  text-align: justify;
+}
+.para{
+    font-size: .9rem;
+    color: var(--black);
+
+}
+  .skills-container{
+  flex-direction: column;
+  width: 80%;
+  height: 55rem;
+}
+.MaxMSP, 
+.music, 
+.education
+{
+width: 70%;
+height: 60%;
+}
+
+.icon{
+  font-size: 1.5rem;
+}
+.fa-music{
+  padding-top: 1.2rem;
+}
+}
+ */
+
+
+

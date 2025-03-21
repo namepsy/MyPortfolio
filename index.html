@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 모바일에서도 잘 보도록 뷰포트 설정 -->
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!--Font Awesome Icons-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>name_psy</title>  <!-- 브라우저 탭 표시 문구 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <a href="#"> <!-- 클릭하면 이동할 수 있는 링크(로고) 생성 -->
+    <img src="Images/logo.png" alt="" /> <!-- 웹사이트 로고 이미지 표시 -->
+  </a> <!-- ? -->
+  <h1>name_psy</h1>
+  <button class="hamburger" id="hamburger">
+
+    <i class="fas fa-bars">
+    </i>
+  </button>
+  <nav>
+    <!-- nav = 내비게이션(메뉴) 역할 -->
+    <ul class="nav-links" id="nav-Ul">
+      <!-- 메뉴 목록 생성 -->
+    <li><a href="#">Skills</a></li>
+    <li><a href="#about">Max Project</a></li>
+    <li><a href="#">Music</a></li>
+    <li><a href="#">Education</a></li>
+    </ul>
+  </nav>
+
+</header>
+  <section id="main-section">
+    <!-- 웹페이지 섹션부분 태그 -->
+    <div class="myphoto">
+      <!-- 프로필사진과 이름을 표시하는 영역 -->
+      <img src="Images/myphoto.jpg" alt="AVATAR" />
+      <h2>Seyoung Park</h2>
+    </div>
+    <div class="About" id="about">
+      <!-- 자기소개 글과 SNS 아이콘 포함하는 영역 -->
+      <p class="para">Se-young Park is a sound designer specializing in game audio and live sound engineering. Studying Music Technology at Dankook University, they have worked on projects integrating music and software. </p>
+      <p class="para">Now expanding into software development with a focus on JavaScript, they aim to explore game and web development to create innovative digital experiences blending sound and technology.</p>
+      <div class="social">
+        <a class="btn" href="#">Resume</a>
+        <!-- 이력서 다운로드 버튼 -->
+        <i class="fab fa-facebook-square "></i>
+        <a href="https://www.instagram.com/name_psy/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <i class="fab fa-twitter-square"></i>
+        <a href="https://github.com/namepsy" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!--SKILLS SECTION -->
+  <section id="skills">
+    <h1>Things I DO</h1>
+    <!-- 섹션 제목 -->
+    <div class="skills-container">
+      <!-- 여러 개의 기술 블록을 감싸는 레이아웃 역할 -->
+      <div class="MaxMSP">
+        <i class="fab fa-music icon"></i>
+        <h2>Max/MSP</h2>
+        <p>Able to sound design using Max/MSP</p>
+      </div>
+      
+      <div class="music">
+        <i class="fas fa-music icon"></i>
+        <h2>Music</h2>
+        <p>Use DAW like Logic Pro and Ableton Live.</p>
+      </div>
+      
+      <div class="education">
+        <i class="fab fa-book icon"></i>
+        <h2>Education</h2>
+        <p>Music Technology from the New music Department at Dankook University.</p>
+      </div>
+      
+    </div>
+  </section>
+  
+<!-- 웹사트 하단 영역 생성 -->
+  <footer id="footer-container">
+    <img src="Images/logo.png" alt="" />
+    <p>Contact Me<br>pseongun@gmail.com</p>
+    
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
